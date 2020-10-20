@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  oidc-auth0-service:
+    build:
+      context: .
+    image: oidc-auth0-service:v1.0.0
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xml:lang="en" lang="en">
+<head>
+    <title>Auth0 Secured Page</title>
+</head>
+<body>
+<p>
+    Caller principal: <h:outputText value="#{loginController.callerPrincipal}"/>
+</p>
+<p>
+    Claims: <h:outputText value="#{loginController.claimsJson}"/>
+</p>
+<p>
+    Groups: <h:outputText value="#{loginController.callerGroups}"/>
+</p>
+</body>
+</html>
