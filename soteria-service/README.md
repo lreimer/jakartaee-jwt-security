@@ -1,6 +1,6 @@
 # Soteria Security Service on Jakarta EE 8
 
-A simple service to showcase some of the Soteria Jakarta EE 8 scurity APIs.
+A simple service to showcase some of the Soteria Jakarta EE 8 security APIs.
 
 ## Usage
 
