@@ -36,7 +36,3 @@ For the user you also have to set the following `user_metadata` attribute:
 ## References
 
 - https://auth0.com/blog/developing-robust-web-apps-with-javaserver-faces-and-java-ee/
-
-## Maintainer
-
-M.-Leander Reimer (@lreimer), <mario-leander.reimer@qaware.de>
