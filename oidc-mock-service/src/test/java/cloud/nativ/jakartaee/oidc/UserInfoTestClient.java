@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 import java.time.Duration;
 
 /**
- * A simple test client to show how to obtain a JWK for a given Key ID using Auth0.
+ * A simple test client to call the user info endpoint of the OIDC mock service.
  */
 @Slf4j
 public class UserInfoTestClient {
