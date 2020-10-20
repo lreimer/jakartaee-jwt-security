@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  soteria-service:
+    build:
+      context: .
+    image: soteria-service:v1.0.0
+    ports:
+      - "8080:8080"
