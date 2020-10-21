@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  jwt-client-service:
+    build:
+      context: .
+    image: jwt-client-service:v1.0.0
+    ports:
+      - "9090:8080"
+  jwt-authz-service:
+    image: jwt-authz-service:v1.0.0
+    ports:
+      - "8080:8080"
+  jwks-service:
+    image: jwks-service:v1.0.0
+    ports:
+      - "7070:8080"

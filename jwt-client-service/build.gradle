@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'groovy'
+    id 'io.franzbecker.gradle-lombok' version '4.0.0'
+}
+
+repositories { jcenter() }
+
+lombok {
+    version = '1.18.12'
+    sha256 = ""
+}
+
+dependencies {
+    providedCompile 'jakarta.platform:jakarta.jakartaee-api:8.0.0'
+    providedCompile 'org.eclipse.microprofile.config:microprofile-config-api:1.4'
+    providedCompile 'org.eclipse.microprofile.jwt:microprofile-jwt-auth-api:1.1.1'
+
+    compile 'org.slf4j:slf4j-api:1.7.30'
+    runtime 'org.slf4j:slf4j-jdk14:1.7.30'
+}
