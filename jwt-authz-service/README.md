@@ -28,3 +28,4 @@ $ open https://jwt.io
 
 - https://github.com/eclipse/microprofile-jwt-auth 
 - https://www.eclipse.org/community/eclipse_newsletter/2017/september/article2.php
+- https://www.heise.de/developer/artikel/MicroProfile-unter-der-Lupe-Teil-3-JWT-Security-3973746.html

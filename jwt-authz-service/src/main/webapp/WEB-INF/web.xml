@@ -5,7 +5,7 @@
 
     <distributable/>
 
-    <display-name>Soteria Security Service with Jakarta EE 8</display-name>
+    <display-name>JWT Authz Service with Jakarta EE 8</display-name>
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

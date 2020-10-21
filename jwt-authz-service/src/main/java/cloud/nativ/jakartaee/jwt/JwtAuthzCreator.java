@@ -45,14 +45,16 @@ public class JwtAuthzCreator {
 
     public String create(String upn) {
         // construct minimum claim set according to MP-JWT specification
+        long millis = clock.millis();
         JWTClaimsSet claimsSet = new JWTClaimsSet.Builder()
-                .issuer(configuration.getIssuer())                 // the token issuer
-                .subject(getSubject())    // the subject of this token
-                .jwtID(UUID.randomUUID().toString())           // the unique JWT ID
-                .audience(configuration.getAudience())    // the intended audience
-                .expirationTime(new Date(clock.millis() + configuration.getExpirationWindow()))
-                .claim("upn", upn)
-                .claim("groups", getGroups())
+                .issuer(configuration.getIssuer())             // the iss claim
+                .subject(getSubject())                         // the sub claim
+                .jwtID(UUID.randomUUID().toString())           // the jti claim
+                .audience(configuration.getAudience())         // the aud claim
+                .issueTime(new Date(millis))                   // the iat claim, required by Payara
+                .expirationTime(new Date(millis + configuration.getExpirationWindow()))  // the exp claim
+                .claim("upn", upn)                       // the upn claim
+                .claim("groups", getGroups())            // the groups claim
                 .build();
 
         return sign(claimsSet, getRsaKey());
