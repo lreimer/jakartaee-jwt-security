@@ -1,12 +1,3 @@
-/*
- *     _   ___ ___     _             _      _   _
- *    /_\ |_ _| _ \   /_\  _ _  __ _| |_  _| |_(_)__ ___
- *   / _ \ | ||   /  / _ \| ' \/ _` | | || |  _| / _(_-<
- *  /_/ \_\___|_|_\ /_/ \_\_||_\__,_|_|\_, |\__|_\__/__/
- *                                     |__/
- *
- *                                        (c) 2018 BMW AG
- */
 package cloud.nativ.jakartaee.constraints;
 
 import com.nimbusds.jose.JWEAlgorithm;
